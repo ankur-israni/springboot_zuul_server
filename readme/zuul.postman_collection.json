@@ -1,0 +1,130 @@
+{
+	"info": {
+		"_postman_id": "b7e9c227-4d2d-4f68-a9a4-b0e336ec811c",
+		"name": "zuul",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "client_inventory_all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8111/services/inventory/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8111",
+					"path": [
+						"services",
+						"inventory",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "client_inventory_all_with_credentials",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "client-id",
+						"value": "aa",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"password\": \"ankur\",\n  \"username\": \"ankur\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8111/services/inventory/allC",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8111",
+					"path": [
+						"services",
+						"inventory",
+						"allC"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "client_employee_all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8111/services/employee/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8111",
+					"path": [
+						"services",
+						"employee",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "client_employee_all_with_credentials",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "client-id",
+						"value": "aa",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"password\": \"ankur\",\n  \"username\": \"ankur\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8111/services/employee/allC",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8111",
+					"path": [
+						"services",
+						"employee",
+						"allC"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
